@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F0684F2F1E37AA77005BF9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */; };
-		F0684F311E37AA77005BF9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F301E37AA77005BF9DC /* ViewController.swift */; };
-		F0684F341E37AA77005BF9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F321E37AA77005BF9DC /* Main.storyboard */; };
+		F0684F341E37AA77005BF9DC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F321E37AA77005BF9DC /* Onboarding.storyboard */; };
 		F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0684F351E37AA77005BF9DC /* Assets.xcassets */; };
 		F0684F391E37AA77005BF9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */; };
 		F0684F441E37AA77005BF9DC /* dojo_photosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */; };
+		F0684F501E37B126005BF9DC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0684F4F1E37B126005BF9DC /* Realm.framework */; };
+		F0684F521E37B129005BF9DC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0684F511E37B129005BF9DC /* RealmSwift.framework */; };
+		F0684F551E37B1C3005BF9DC /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0684F541E37B1C3005BF9DC /* Apollo.framework */; };
+		F0FD73C01E37B7B40083A51C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F0FD73BF1E37B7B40083A51C /* Cartfile */; };
+		F0FD73C61E37B9060083A51C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FD73C51E37B9060083A51C /* AppConfig.swift */; };
+		F0FD73C81E37B9280083A51C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F0FD73C71E37B9280083A51C /* README.md */; };
+		F0FD73CA1E37BC9A0083A51C /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FD73C91E37BC9A0083A51C /* OnboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F0684F2B1E37AA77005BF9DC /* dojo-photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dojo-photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0684F2B1E37AA77005BF9DC /* Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0684F301E37AA77005BF9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0684F331E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0684F331E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		F0684F351E37AA77005BF9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0684F381E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0684F3A1E37AA77005BF9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0684F3F1E37AA77005BF9DC /* dojo-photosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dojo-photosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0684F3F1E37AA77005BF9DC /* PhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dojo_photosTests.swift; sourceTree = "<group>"; };
 		F0684F451E37AA77005BF9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0684F4F1E37B126005BF9DC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		F0684F511E37B129005BF9DC /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		F0684F541E37B1C3005BF9DC /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = Carthage/Build/iOS/Apollo.framework; sourceTree = "<group>"; };
+		F0FD73BF1E37B7B40083A51C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		F0FD73C51E37B9060083A51C /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F0FD73C71E37B9280083A51C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F0FD73C91E37BC9A0083A51C /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardViewController.swift; path = Controllers/OnboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0684F501E37B126005BF9DC /* Realm.framework in Frameworks */,
+				F0684F521E37B129005BF9DC /* RealmSwift.framework in Frameworks */,
+				F0684F551E37B1C3005BF9DC /* Apollo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,31 +74,39 @@
 		F0684F221E37AA77005BF9DC = {
 			isa = PBXGroup;
 			children = (
-				F0684F2D1E37AA77005BF9DC /* dojo-photos */,
+				F0FD73BF1E37B7B40083A51C /* Cartfile */,
+				F0FD73C71E37B9280083A51C /* README.md */,
+				F0684F2D1E37AA77005BF9DC /* Photos */,
 				F0684F421E37AA77005BF9DC /* dojo-photosTests */,
 				F0684F2C1E37AA77005BF9DC /* Products */,
+				F0684F4E1E37B126005BF9DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F0684F2C1E37AA77005BF9DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0684F2B1E37AA77005BF9DC /* dojo-photos.app */,
-				F0684F3F1E37AA77005BF9DC /* dojo-photosTests.xctest */,
+				F0684F2B1E37AA77005BF9DC /* Photos.app */,
+				F0684F3F1E37AA77005BF9DC /* PhotosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F0684F2D1E37AA77005BF9DC /* dojo-photos */ = {
+		F0684F2D1E37AA77005BF9DC /* Photos */ = {
 			isa = PBXGroup;
 			children = (
 				F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */,
-				F0684F301E37AA77005BF9DC /* ViewController.swift */,
-				F0684F321E37AA77005BF9DC /* Main.storyboard */,
-				F0684F351E37AA77005BF9DC /* Assets.xcassets */,
+				F0FD73C51E37B9060083A51C /* AppConfig.swift */,
+				F0FD73C11E37B8440083A51C /* Models */,
+				F0FD73C21E37B85A0083A51C /* Database */,
+				F0FD73C31E37B8610083A51C /* API */,
+				F0FD73C41E37B8670083A51C /* Controllers */,
+				F0684F321E37AA77005BF9DC /* Onboarding.storyboard */,
 				F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */,
+				F0684F351E37AA77005BF9DC /* Assets.xcassets */,
 				F0684F3A1E37AA77005BF9DC /* Info.plist */,
 			);
+			name = Photos;
 			path = "dojo-photos";
 			sourceTree = "<group>";
 		};
@@ -96,29 +119,70 @@
 			path = "dojo-photosTests";
 			sourceTree = "<group>";
 		};
+		F0684F4E1E37B126005BF9DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0684F541E37B1C3005BF9DC /* Apollo.framework */,
+				F0684F511E37B129005BF9DC /* RealmSwift.framework */,
+				F0684F4F1E37B126005BF9DC /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0FD73C11E37B8440083A51C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F0FD73C21E37B85A0083A51C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		F0FD73C31E37B8610083A51C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		F0FD73C41E37B8670083A51C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0FD73C91E37BC9A0083A51C /* OnboardViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0684F2A1E37AA77005BF9DC /* dojo-photos */ = {
+		F0684F2A1E37AA77005BF9DC /* Photos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0684F481E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photos" */;
+			buildConfigurationList = F0684F481E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "Photos" */;
 			buildPhases = (
+				F0684F561E37B207005BF9DC /* ShellScript */,
 				F0684F271E37AA77005BF9DC /* Sources */,
 				F0684F281E37AA77005BF9DC /* Frameworks */,
 				F0684F291E37AA77005BF9DC /* Resources */,
+				F0684F531E37B133005BF9DC /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "dojo-photos";
+			name = Photos;
 			productName = "dojo-photos";
-			productReference = F0684F2B1E37AA77005BF9DC /* dojo-photos.app */;
+			productReference = F0684F2B1E37AA77005BF9DC /* Photos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F0684F3E1E37AA77005BF9DC /* dojo-photosTests */ = {
+		F0684F3E1E37AA77005BF9DC /* PhotosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0684F4B1E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photosTests" */;
+			buildConfigurationList = F0684F4B1E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "PhotosTests" */;
 			buildPhases = (
 				F0684F3B1E37AA77005BF9DC /* Sources */,
 				F0684F3C1E37AA77005BF9DC /* Frameworks */,
@@ -129,9 +193,9 @@
 			dependencies = (
 				F0684F411E37AA77005BF9DC /* PBXTargetDependency */,
 			);
-			name = "dojo-photosTests";
+			name = PhotosTests;
 			productName = "dojo-photosTests";
-			productReference = F0684F3F1E37AA77005BF9DC /* dojo-photosTests.xctest */;
+			productReference = F0684F3F1E37AA77005BF9DC /* PhotosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F0684F261E37AA77005BF9DC /* Build configuration list for PBXProject "dojo-photos" */;
+			buildConfigurationList = F0684F261E37AA77005BF9DC /* Build configuration list for PBXProject "Photos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -170,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0684F2A1E37AA77005BF9DC /* dojo-photos */,
-				F0684F3E1E37AA77005BF9DC /* dojo-photosTests */,
+				F0684F2A1E37AA77005BF9DC /* Photos */,
+				F0684F3E1E37AA77005BF9DC /* PhotosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,7 +247,8 @@
 			files = (
 				F0684F391E37AA77005BF9DC /* LaunchScreen.storyboard in Resources */,
 				F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */,
-				F0684F341E37AA77005BF9DC /* Main.storyboard in Resources */,
+				F0FD73C01E37B7B40083A51C /* Cartfile in Resources */,
+				F0684F341E37AA77005BF9DC /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +261,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F0684F531E37B133005BF9DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Apollo.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		F0684F561E37B207005BF9DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\n#if [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\n#echo \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\n#exit 1\n#fi\n\n#cd \"${SRCROOT}/${TARGET_NAME}\"\n#$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0684F271E37AA77005BF9DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0684F311E37AA77005BF9DC /* ViewController.swift in Sources */,
+				F0FD73C81E37B9280083A51C /* README.md in Sources */,
 				F0684F2F1E37AA77005BF9DC /* AppDelegate.swift in Sources */,
+				F0FD73CA1E37BC9A0083A51C /* OnboardViewController.swift in Sources */,
+				F0FD73C61E37B9060083A51C /* AppConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,18 +318,18 @@
 /* Begin PBXTargetDependency section */
 		F0684F411E37AA77005BF9DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F0684F2A1E37AA77005BF9DC /* dojo-photos */;
+			target = F0684F2A1E37AA77005BF9DC /* Photos */;
 			targetProxy = F0684F401E37AA77005BF9DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F0684F321E37AA77005BF9DC /* Main.storyboard */ = {
+		F0684F321E37AA77005BF9DC /* Onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F0684F331E37AA77005BF9DC /* Base */,
 			);
-			name = Main.storyboard;
+			name = Onboarding.storyboard;
 			sourceTree = "<group>";
 		};
 		F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */ = {
@@ -338,8 +437,13 @@
 		F0684F491E37AA77005BF9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_GRAPH_URL = "https://core-graphql.staging.waldo.photos/gql";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TS6V23BE8W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "dojo-photos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photos";
@@ -351,8 +455,13 @@
 		F0684F4A1E37AA77005BF9DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_GRAPH_URL = "https://core-graphql.staging.waldo.photos/gql";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TS6V23BE8W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "dojo-photos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photos";
@@ -372,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dojo-photos.app/dojo-photos";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photos.app/Photos";
 			};
 			name = Debug;
 		};
@@ -387,14 +496,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dojo-photos.app/dojo-photos";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photos.app/Photos";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0684F261E37AA77005BF9DC /* Build configuration list for PBXProject "dojo-photos" */ = {
+		F0684F261E37AA77005BF9DC /* Build configuration list for PBXProject "Photos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0684F461E37AA77005BF9DC /* Debug */,
@@ -403,21 +512,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0684F481E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photos" */ = {
+		F0684F481E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "Photos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0684F491E37AA77005BF9DC /* Debug */,
 				F0684F4A1E37AA77005BF9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F0684F4B1E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photosTests" */ = {
+		F0684F4B1E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "PhotosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0684F4C1E37AA77005BF9DC /* Debug */,
 				F0684F4D1E37AA77005BF9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

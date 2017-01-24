@@ -1,0 +1,2 @@
+github "apollostack/apollo-ios" "0.4.3"
+github "realm/realm-cocoa" "v2.3.0"
