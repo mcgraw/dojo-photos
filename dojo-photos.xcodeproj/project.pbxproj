@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0684F2F1E37AA77005BF9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */; };
+		F0684F311E37AA77005BF9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F301E37AA77005BF9DC /* ViewController.swift */; };
+		F0684F341E37AA77005BF9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F321E37AA77005BF9DC /* Main.storyboard */; };
+		F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0684F351E37AA77005BF9DC /* Assets.xcassets */; };
+		F0684F391E37AA77005BF9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */; };
+		F0684F441E37AA77005BF9DC /* dojo_photosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0684F401E37AA77005BF9DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0684F231E37AA77005BF9DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0684F2A1E37AA77005BF9DC;
+			remoteInfo = "dojo-photos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0684F2B1E37AA77005BF9DC /* dojo-photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dojo-photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0684F301E37AA77005BF9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0684F331E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0684F351E37AA77005BF9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0684F381E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0684F3A1E37AA77005BF9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0684F3F1E37AA77005BF9DC /* dojo-photosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dojo-photosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dojo_photosTests.swift; sourceTree = "<group>"; };
+		F0684F451E37AA77005BF9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0684F281E37AA77005BF9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0684F3C1E37AA77005BF9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0684F221E37AA77005BF9DC = {
+			isa = PBXGroup;
+			children = (
+				F0684F2D1E37AA77005BF9DC /* dojo-photos */,
+				F0684F421E37AA77005BF9DC /* dojo-photosTests */,
+				F0684F2C1E37AA77005BF9DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0684F2C1E37AA77005BF9DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0684F2B1E37AA77005BF9DC /* dojo-photos.app */,
+				F0684F3F1E37AA77005BF9DC /* dojo-photosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0684F2D1E37AA77005BF9DC /* dojo-photos */ = {
+			isa = PBXGroup;
+			children = (
+				F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */,
+				F0684F301E37AA77005BF9DC /* ViewController.swift */,
+				F0684F321E37AA77005BF9DC /* Main.storyboard */,
+				F0684F351E37AA77005BF9DC /* Assets.xcassets */,
+				F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */,
+				F0684F3A1E37AA77005BF9DC /* Info.plist */,
+			);
+			path = "dojo-photos";
+			sourceTree = "<group>";
+		};
+		F0684F421E37AA77005BF9DC /* dojo-photosTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */,
+				F0684F451E37AA77005BF9DC /* Info.plist */,
+			);
+			path = "dojo-photosTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0684F2A1E37AA77005BF9DC /* dojo-photos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0684F481E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photos" */;
+			buildPhases = (
+				F0684F271E37AA77005BF9DC /* Sources */,
+				F0684F281E37AA77005BF9DC /* Frameworks */,
+				F0684F291E37AA77005BF9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dojo-photos";
+			productName = "dojo-photos";
+			productReference = F0684F2B1E37AA77005BF9DC /* dojo-photos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0684F3E1E37AA77005BF9DC /* dojo-photosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0684F4B1E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photosTests" */;
+			buildPhases = (
+				F0684F3B1E37AA77005BF9DC /* Sources */,
+				F0684F3C1E37AA77005BF9DC /* Frameworks */,
+				F0684F3D1E37AA77005BF9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0684F411E37AA77005BF9DC /* PBXTargetDependency */,
+			);
+			name = "dojo-photosTests";
+			productName = "dojo-photosTests";
+			productReference = F0684F3F1E37AA77005BF9DC /* dojo-photosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0684F231E37AA77005BF9DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "David McGraw";
+				TargetAttributes = {
+					F0684F2A1E37AA77005BF9DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TS6V23BE8W;
+						ProvisioningStyle = Automatic;
+					};
+					F0684F3E1E37AA77005BF9DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TS6V23BE8W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F0684F2A1E37AA77005BF9DC;
+					};
+				};
+			};
+			buildConfigurationList = F0684F261E37AA77005BF9DC /* Build configuration list for PBXProject "dojo-photos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0684F221E37AA77005BF9DC;
+			productRefGroup = F0684F2C1E37AA77005BF9DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0684F2A1E37AA77005BF9DC /* dojo-photos */,
+				F0684F3E1E37AA77005BF9DC /* dojo-photosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0684F291E37AA77005BF9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0684F391E37AA77005BF9DC /* LaunchScreen.storyboard in Resources */,
+				F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */,
+				F0684F341E37AA77005BF9DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0684F3D1E37AA77005BF9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0684F271E37AA77005BF9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0684F311E37AA77005BF9DC /* ViewController.swift in Sources */,
+				F0684F2F1E37AA77005BF9DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0684F3B1E37AA77005BF9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0684F441E37AA77005BF9DC /* dojo_photosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0684F411E37AA77005BF9DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0684F2A1E37AA77005BF9DC /* dojo-photos */;
+			targetProxy = F0684F401E37AA77005BF9DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0684F321E37AA77005BF9DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0684F331E37AA77005BF9DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0684F381E37AA77005BF9DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0684F461E37AA77005BF9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0684F471E37AA77005BF9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0684F491E37AA77005BF9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TS6V23BE8W;
+				INFOPLIST_FILE = "dojo-photos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F0684F4A1E37AA77005BF9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TS6V23BE8W;
+				INFOPLIST_FILE = "dojo-photos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F0684F4C1E37AA77005BF9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TS6V23BE8W;
+				INFOPLIST_FILE = "dojo-photosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dojo-photos.app/dojo-photos";
+			};
+			name = Debug;
+		};
+		F0684F4D1E37AA77005BF9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TS6V23BE8W;
+				INFOPLIST_FILE = "dojo-photosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dojo-photos.app/dojo-photos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0684F261E37AA77005BF9DC /* Build configuration list for PBXProject "dojo-photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0684F461E37AA77005BF9DC /* Debug */,
+				F0684F471E37AA77005BF9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0684F481E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0684F491E37AA77005BF9DC /* Debug */,
+				F0684F4A1E37AA77005BF9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F0684F4B1E37AA77005BF9DC /* Build configuration list for PBXNativeTarget "dojo-photosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0684F4C1E37AA77005BF9DC /* Debug */,
+				F0684F4D1E37AA77005BF9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0684F231E37AA77005BF9DC /* Project object */;
+}
