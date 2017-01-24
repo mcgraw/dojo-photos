@@ -1,2 +1,5 @@
 github "realm/realm-cocoa"
-github "apollostack/apollo-ios"
+github "Alamofire/Alamofire"
+github "Alamofire/AlamofireImage"
+github "SwiftyJSON/SwiftyJSON"
+github "mxcl/PromiseKit"
