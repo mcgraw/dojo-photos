@@ -16,11 +16,16 @@
 		F053DD6E1E38002F007DE754 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053DD6D1E38002F007DE754 /* FeedViewController.swift */; };
 		F053DD701E38024F007DE754 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053DD6F1E38024F007DE754 /* FeedCollectionViewCell.swift */; };
 		F053DD721E3804EB007DE754 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F053DD711E3804EB007DE754 /* AlamofireImage.framework */; };
+		F0560CF31E3913A000C32B8D /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = F0560CF21E3913A000C32B8D /* Cartfile.private */; };
+		F0560CF61E3917F300C32B8D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0560CF51E3917F300C32B8D /* Nimble.framework */; };
+		F0560CF81E3917F700C32B8D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0560CF71E3917F700C32B8D /* Quick.framework */; };
+		F0560CFD1E39183000C32B8D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0560CF71E3917F700C32B8D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0560CFE1E39183200C32B8D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0560CF51E3917F300C32B8D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0560D001E39186500C32B8D /* PhotoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0560CFF1E39186500C32B8D /* PhotoSpec.swift */; };
 		F0684F2F1E37AA77005BF9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */; };
 		F0684F341E37AA77005BF9DC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F321E37AA77005BF9DC /* Onboarding.storyboard */; };
 		F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0684F351E37AA77005BF9DC /* Assets.xcassets */; };
 		F0684F391E37AA77005BF9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F371E37AA77005BF9DC /* LaunchScreen.storyboard */; };
-		F0684F441E37AA77005BF9DC /* dojo_photosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */; };
 		F0684F501E37B126005BF9DC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0684F4F1E37B126005BF9DC /* Realm.framework */; };
 		F0684F521E37B129005BF9DC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0684F511E37B129005BF9DC /* RealmSwift.framework */; };
 		F07B98381E3805C100D3E3A3 /* AppImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07B98371E3805C100D3E3A3 /* AppImageManager.swift */; };
@@ -44,6 +49,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F0560CF41E39140A00C32B8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F0560CFD1E39183000C32B8D /* Quick.framework in CopyFiles */,
+				F0560CFE1E39183200C32B8D /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F053DD5C1E37D6B1007DE754 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		F053DD5E1E37D6B4007DE754 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -54,6 +73,10 @@
 		F053DD6D1E38002F007DE754 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controllers/FeedViewController.swift; sourceTree = "<group>"; };
 		F053DD6F1E38024F007DE754 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCollectionViewCell.swift; path = Controllers/FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F053DD711E3804EB007DE754 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		F0560CF21E3913A000C32B8D /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
+		F0560CF51E3917F300C32B8D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		F0560CF71E3917F700C32B8D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		F0560CFF1E39186500C32B8D /* PhotoSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSpec.swift; sourceTree = "<group>"; };
 		F0684F2B1E37AA77005BF9DC /* Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0684F331E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
@@ -61,7 +84,6 @@
 		F0684F381E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0684F3A1E37AA77005BF9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0684F3F1E37AA77005BF9DC /* PhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dojo_photosTests.swift; sourceTree = "<group>"; };
 		F0684F451E37AA77005BF9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0684F4F1E37B126005BF9DC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		F0684F511E37B129005BF9DC /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -96,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0560CF61E3917F300C32B8D /* Nimble.framework in Frameworks */,
+				F0560CF81E3917F700C32B8D /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				F0FD73BF1E37B7B40083A51C /* Cartfile */,
+				F0560CF21E3913A000C32B8D /* Cartfile.private */,
 				F0FD73C71E37B9280083A51C /* README.md */,
 				F0684F2D1E37AA77005BF9DC /* Photos */,
 				F0684F421E37AA77005BF9DC /* dojo-photosTests */,
@@ -145,7 +170,7 @@
 		F0684F421E37AA77005BF9DC /* dojo-photosTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0684F431E37AA77005BF9DC /* dojo_photosTests.swift */,
+				F0560CFF1E39186500C32B8D /* PhotoSpec.swift */,
 				F0684F451E37AA77005BF9DC /* Info.plist */,
 			);
 			path = "dojo-photosTests";
@@ -154,6 +179,8 @@
 		F0684F4E1E37B126005BF9DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0560CF71E3917F700C32B8D /* Quick.framework */,
+				F0560CF51E3917F300C32B8D /* Nimble.framework */,
 				F053DD711E3804EB007DE754 /* AlamofireImage.framework */,
 				F053DD5E1E37D6B4007DE754 /* Alamofire.framework */,
 				F053DD5C1E37D6B1007DE754 /* SwiftyJSON.framework */,
@@ -232,6 +259,7 @@
 				F0684F3B1E37AA77005BF9DC /* Sources */,
 				F0684F3C1E37AA77005BF9DC /* Frameworks */,
 				F0684F3D1E37AA77005BF9DC /* Resources */,
+				F0560CF41E39140A00C32B8D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -291,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0684F391E37AA77005BF9DC /* LaunchScreen.storyboard in Resources */,
+				F0560CF31E3913A000C32B8D /* Cartfile.private in Resources */,
 				F053DD6C1E37F5F7007DE754 /* Home.storyboard in Resources */,
 				F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */,
 				F0FD73C01E37B7B40083A51C /* Cartfile in Resources */,
@@ -354,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0684F441E37AA77005BF9DC /* dojo_photosTests.swift in Sources */,
+				F0560D001E39186500C32B8D /* PhotoSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +560,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = TS6V23BE8W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "dojo-photosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photosTests";
@@ -546,6 +579,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = TS6V23BE8W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "dojo-photosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.generic.dojo-photosTests";
