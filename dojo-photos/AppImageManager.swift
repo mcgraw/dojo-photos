@@ -30,6 +30,9 @@ class AppImageManager {
      * a dedicated caching manager could be worthwhile to pursue in order to 
      * gain further control of what is being downloaded, transformed, purged, etc.
      *
+     * Before a custom cache, AlamofireImage default (which can be tuned):
+     *          150 MB disk capacity
+     *           20 MB initialized memory capacity
      */
     
 }
