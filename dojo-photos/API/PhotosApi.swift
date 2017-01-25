@@ -54,7 +54,10 @@ public class PhotosApi {
         // Database configuration, migration, etc
         print("Database local file path: \(Realm.Configuration.defaultConfiguration.fileURL)")
         
-        // TODO: Monitor network reachability
+        // Monitor network reachability
+        //     Ideally we'd throw in even more here to track if:
+        //       a) we can reach any network
+        //       b) we can reach our servers
     }
         
 }

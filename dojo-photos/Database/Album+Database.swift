@@ -11,10 +11,13 @@ import SwiftyJSON
 
 extension Album {
     
+    // MARK: - Class
     class public func first() -> Album? {
         return try! Realm().objects(Album.self).first
     }
     
+    
+    // MARK: - Initializers
     convenience public init?(withAlbumId id: String) {
         let realm = try! Realm()
         if let album = realm.objects(Album.self).filter("id = '\(id)'").first {
@@ -27,6 +30,7 @@ extension Album {
         }
     }
 
+    // MARK: - CRUD (update only for now)
     public func update(withJSON json: JSON) {
         self.name          = json["name"].stringValue
         
@@ -50,7 +54,14 @@ extension Album {
         }
     }
     
-    private func parse(withPath path: String) -> (id: String, type: String) {
+    // MARK: - Convenience
+    
+    /*
+     * Take a given path and get the UUID and filetype from it
+     * 
+     * Temporary solution to avoid spending more time building out models and tests
+     */
+    public func parse(withPath path: String) -> (id: String, type: String) {
         let comps = path.components(separatedBy: "/")
         let filename = comps.last?.components(separatedBy: ".")
         if let photoId = filename?.first, let type = filename?.last {

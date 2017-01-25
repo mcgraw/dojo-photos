@@ -25,6 +25,9 @@ extension Photo {
         let realm = try! Realm()
         try! realm.write {
             
+            // Maintain explicit record data for paths
+            // Skipping for now so this project doesn't take forever longer
+            
             realm.add(self, update: true)
         }
     }

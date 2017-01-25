@@ -17,7 +17,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
     var url: URL?
     
-    
     // MARK: - System
     
     override func prepareForReuse() {
