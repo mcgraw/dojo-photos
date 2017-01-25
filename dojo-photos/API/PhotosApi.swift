@@ -20,6 +20,7 @@ public class PhotosApi {
         static let thumbPath = Bundle.main.infoDictionary?["S3PhotoURL"] as? String
         static let graphPath = Bundle.main.infoDictionary?["GraphURL"] as? String
         static let graphURL = URL(string: PhotosApi.graphPath)
+        static let fetchLimit = 50
     }
     
     class var shared: PhotosApi {
@@ -36,6 +37,10 @@ public class PhotosApi {
     
     class var graphURL: URL? {
         return Constants.graphURL
+    }
+    
+    class var photoFetchLimit: Int {
+        return Constants.fetchLimit
     }
         
     // MARK: - System

@@ -18,7 +18,7 @@ public class PhotosRequest {
      * To pull the next batch, simply adjust the offset. Setting it to 50 with 
      * a limit value of 50 for example, will retrieve photos 51-100.
      */
-    public func feed(withLimit limit: Int = 50, offset: Int) -> Promise<Void> {
+    public func feed(withLimit limit: Int = PhotosApi.photoFetchLimit, offset: Int) -> Promise<Void> {
         return Promise { fufill, reject in
             print("> Begin fetch for photos with limit \(limit) offset by \(offset)")
             let headers = ["Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjoiMmEyODQ4M2YtNWM2Yi00ZWU5LWE4YjUtYzFlMGU5NWUwYTY5Iiwicm9sZXMiOlsiYWRtaW5pc3RyYXRvciJdLCJpc3MiOiJ3YWxkbzpjb3JlIiwiZ3JhbnRzIjpbImFsYnVtczpkZWxldGU6KiIsImFsYnVtczpjcmVhdGU6KiIsImFsYnVtczplZGl0OioiLCJhbGJ1bXM6dmlldzoqIl0sImV4cCI6MTQ4Nzg2MzA3MiwiaWF0IjoxNDg1MjcxMDcyfQ.iLOnItDCD2QssvwtlodvG_6UtuA-GpNY54E8TYLzcWU"]

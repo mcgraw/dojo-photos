@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,10 +56,35 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="yOE-dM-1zN" id="zih-tX-fYU"/>
+                                    <outlet property="delegate" destination="yOE-dM-1zN" id="gRe-Tu-I2p"/>
+                                </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wt-Qg-UeZ" userLabel="Loading">
+                                <rect key="frame" x="304" y="667" width="60" height="70"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ffi-CY-yWZ">
+                                        <rect key="frame" x="12" y="12" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="UoF-Ga-pzR"/>
+                                            <constraint firstAttribute="width" constant="37" id="e2D-Nt-bcN"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.082352943720000002" green="0.47843140360000003" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1vX-8t-SY5"/>
+                                    <constraint firstItem="ffi-CY-yWZ" firstAttribute="centerX" secondItem="9wt-Qg-UeZ" secondAttribute="centerX" id="AHb-wj-mMu"/>
+                                    <constraint firstAttribute="height" constant="70" id="K6b-hA-ZkC"/>
+                                    <constraint firstItem="ffi-CY-yWZ" firstAttribute="top" secondItem="9wt-Qg-UeZ" secondAttribute="top" constant="12" id="bbX-cn-y7F"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9wt-Qg-UeZ" secondAttribute="trailing" constant="11" id="2hO-lz-UaF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9wt-Qg-UeZ" secondAttribute="bottom" constant="-70" id="3oU-X9-WxJ"/>
                             <constraint firstAttribute="trailing" secondItem="S6j-ro-g2W" secondAttribute="trailing" id="5Wx-b5-37N"/>
                             <constraint firstItem="S6j-ro-g2W" firstAttribute="leading" secondItem="VyP-Xs-Uvv" secondAttribute="leading" id="5nz-8q-DJ0"/>
                             <constraint firstItem="tgY-UH-dTg" firstAttribute="top" secondItem="S6j-ro-g2W" secondAttribute="bottom" id="5yb-P1-Lwu"/>
@@ -67,6 +93,9 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="S6j-ro-g2W" id="y1q-eD-t3Y"/>
+                        <outlet property="loadingView" destination="9wt-Qg-UeZ" id="pY5-4J-LWq"/>
+                        <outlet property="loadingViewActivity" destination="ffi-CY-yWZ" id="6rc-cJ-XDV"/>
+                        <outlet property="loadingViewBottomContraint" destination="3oU-X9-WxJ" id="b8f-hm-avV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlX-oc-qS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
