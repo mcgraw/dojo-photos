@@ -8,6 +8,12 @@
 
 import Alamofire
 
+/*
+ * We're not using this, but I'd thought it would be helpful to see how I manage
+ * the wide variety of endpoints an iOS app interacts with. A single source for 
+ * all of that information.
+ */
+
 public enum RouterError: Error {
     case invalidGraphUrl
 }
