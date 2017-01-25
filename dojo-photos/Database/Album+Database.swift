@@ -11,11 +11,11 @@ import SwiftyJSON
 
 extension Album {
     
-    class func first() -> Album? {
+    class public func first() -> Album? {
         return try! Realm().objects(Album.self).first
     }
     
-    convenience init?(withAlbumId id: String) {
+    convenience public init?(withAlbumId id: String) {
         let realm = try! Realm()
         if let album = realm.objects(Album.self).filter("id = '\(id)'").first {
             self.init()
@@ -27,7 +27,7 @@ extension Album {
         }
     }
 
-    func update(withJSON json: JSON) {
+    public func update(withJSON json: JSON) {
         self.name          = json["name"].stringValue
         
         let realm = try! Realm()

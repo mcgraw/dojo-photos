@@ -23,28 +23,28 @@ public class PhotosApi {
         static let fetchLimit = 50
     }
     
-    class var shared: PhotosApi {
+    class public var shared: PhotosApi {
         return Constants.shared
     }
     
-    class var thumbPath: String {
+    class public var thumbPath: String {
         return Constants.thumbPath ?? ""
     }
     
-    class var graphPath: String {
+    class public var graphPath: String {
         return Constants.graphPath ?? ""
     }
     
-    class var graphURL: URL? {
+    class public var graphURL: URL? {
         return Constants.graphURL
     }
     
-    class var photoFetchLimit: Int {
+    class public var photoFetchLimit: Int {
         return Constants.fetchLimit
     }
         
     // MARK: - System
-    init() {
+    public init() {
         // What endpoint is the API on?
         print("API endpoint: \(PhotosApi.graphPath)")
         

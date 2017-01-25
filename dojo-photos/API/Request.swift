@@ -6,7 +6,7 @@
 //  Copyright © 2017 David McGraw. All rights reserved.
 //
 
-enum RequestError: Error {
+public enum RequestError: Error {
     case invalidResponse
     case networkUnavailable
     case parseError

@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-enum PhotoSize: String {
+public enum PhotoSize: String {
     case small      = "small"
     case small2x    = "small2x"
     case medium     = "medium"
@@ -19,15 +19,15 @@ enum PhotoSize: String {
     case large2x    = "large2x"
 }
 
-enum PhotoType: String {
+public enum PhotoType: String {
     case jpg        = "jpg"
 }
 
-class Photo: Object {
-    dynamic var id = ""
-    dynamic var type = ""
+public class Photo: Object {
+    dynamic public var id = ""
+    dynamic public var type = ""
     
-    override static func primaryKey() -> String? {
+    override public static func primaryKey() -> String? {
         return "id"
     }
     

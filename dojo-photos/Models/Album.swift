@@ -9,13 +9,13 @@
 import Foundation
 import RealmSwift
 
-class Album: Object {
-    dynamic var id = ""
-    dynamic var name = ""
+public class Album: Object {
+    dynamic public var id = ""
+    dynamic public var name = ""
     
-    var photos = List<Photo>()
+    public var photos = List<Photo>()
     
-    override static func primaryKey() -> String? {
+    override public static func primaryKey() -> String? {
         return "id"
     }
 }

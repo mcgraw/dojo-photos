@@ -11,7 +11,7 @@ import SwiftyJSON
 
 extension Photo {
     
-    convenience init?(withPhotoId id: String) {
+    convenience public init?(withPhotoId id: String) {
         let realm = try! Realm()
         if let photo = realm.objects(Photo.self).filter("id = '\(id)'").first {
             self.init()
@@ -21,7 +21,7 @@ extension Photo {
         }
     }
     
-    func update(withJSON json: JSON) {
+    public func update(withJSON json: JSON) {
         let realm = try! Realm()
         try! realm.write {
             
@@ -29,7 +29,7 @@ extension Photo {
         }
     }
 
-    func path(forSize size: PhotoSize) -> String {
-        return "https://waldo-thumbs-staging.s3.amazonaws.com/\(size.rawValue)/\(id).\(type)"
+    public func path(forSize size: PhotoSize) -> String {
+        return "\(PhotosApi.thumbPath)/\(size.rawValue)/\(id).\(type)"
     }
 }
