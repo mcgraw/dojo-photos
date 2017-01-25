@@ -25,6 +25,11 @@ class AppImageManager {
     
     // MARK: - Cache
     
-    
+    /* 
+     * While relying on AlamofireImage UIImageView extensions is typically OK,
+     * a dedicated caching manager could be worthwhile to pursue in order to 
+     * gain further control of what is being downloaded, transformed, purged, etc.
+     *
+     */
     
 }
