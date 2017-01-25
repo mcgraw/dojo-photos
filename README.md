@@ -16,5 +16,6 @@ This app loads a set of photos from a remote source for display
 - Alamofire: basic networking
 - AlamofireImage: image handling
 - Realm: database
+- PromiseKit: promises
 - SwiftyJSON: parsing
 - Quick & Nimble: testing
