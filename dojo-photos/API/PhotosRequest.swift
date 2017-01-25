@@ -31,17 +31,7 @@ public class PhotosRequest {
                     if (response.result.error == nil) {
                         print("< Fetch for more photos complete")
                         if let data = response.data {
-                            let json = JSON(data: data)
-                            
-                            let albumData = json["data"]["album"]
-                            if let albumId = albumData["id"].string {
-                                if let mutable = Album(withAlbumId: albumId) {
-                                    mutable.update(withJSON: albumData)
-                                } else {
-                                    let album = Album()
-                                    album.id = albumId
-                                    album.update(withJSON: albumData)
-                                }
+                            if Album.updateAlbum(fromJSON: JSON(data: data)) {
                                 fufill()
                             } else {
                                 reject(RequestError.parseError)

@@ -16,6 +16,20 @@ extension Album {
         return try! Realm().objects(Album.self).first
     }
     
+    class public func updateAlbum(fromJSON json: JSON) -> Bool {
+        let albumData = json["data"]["album"]
+        if let albumId = albumData["id"].string {
+            if let mutable = Album(withAlbumId: albumId) {
+                mutable.update(withJSON: albumData)
+            } else {
+                let album = Album()
+                album.id = albumId
+                album.update(withJSON: albumData)
+            }
+            return true
+        }
+        return false
+    }
     
     // MARK: - Initializers
     convenience public init?(withAlbumId id: String) {

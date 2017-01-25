@@ -16,6 +16,7 @@ extension Photo {
         if let photo = realm.objects(Photo.self).filter("id = '\(id)'").first {
             self.init()
             self.id         = photo.id
+            self.type       = photo.type
         } else {
             return nil
         }
