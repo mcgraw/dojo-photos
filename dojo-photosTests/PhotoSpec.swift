@@ -10,24 +10,54 @@ import Quick
 import Nimble
 import RealmSwift
 import SwiftyJSON
-import Photos
 
-class PhotoSpec: QuickSpec {
+@testable import Photos
+
+class PhotoSpec: BaseSpec {
     
     override func spec() {
         super.spec()
         
-        // Set an in memory identifier so we don't mess with the prod/dev db
-        beforeSuite {
-            Realm.Configuration.defaultConfiguration.inMemoryIdentifier = self.name
+        let photoPath = "https://waldo-thumbs-staging.s3.amazonaws.com/small2x/3b568ff2-f408-4824-996b-0116c06b0a6f.jpg"
+        let photoId = "3b568ff2-f408-4824-996b-0116c06b0a6f"
+        let photoType = PhotoType.jpg
+        
+        describe("photo") {
+            describe("create photo with id and type") {
+                it("initializes") {
+                    self.createPhoto(withId: photoId, type: photoType)
+                    
+                    let photo = Photo(withPhotoId: photoId)
+                    expect(photo?.id) == photoId
+                    expect(photo?.type) == photoType.rawValue
+                }
+            }
+            
+            describe("get photo path with") {
+                it("formats properly") {
+                    self.createPhoto(withId: photoId, type: photoType)
+                    let photo = Photo(withPhotoId: photoId)
+            
+                    let path = photo?.path(forSize: .small2x)
+                    expect(path) == photoPath
+                }
+            }
         }
         
-        // Clear any data so we begin fresh
-        beforeEach {
-            let realm = try! Realm()
-            try! realm.write {
-                realm.deleteAll()
-            }
+    }
+    
+}
+
+
+extension PhotoSpec {
+    
+    func createPhoto(withId id: String, type: PhotoType) {
+        let realm = try! Realm()
+        try! realm.write {
+            let photo = Photo()
+            photo.id = id
+            photo.type = type.rawValue
+            realm.add(photo)
         }
     }
     

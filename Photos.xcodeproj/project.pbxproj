@@ -22,6 +22,9 @@
 		F0560CFD1E39183000C32B8D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0560CF71E3917F700C32B8D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0560CFE1E39183200C32B8D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0560CF51E3917F300C32B8D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0560D001E39186500C32B8D /* PhotoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0560CFF1E39186500C32B8D /* PhotoSpec.swift */; };
+		F0560D021E391C3800C32B8D /* BaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0560D011E391C3800C32B8D /* BaseSpec.swift */; };
+		F0560D041E392A8200C32B8D /* AlbumSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0560D031E392A8200C32B8D /* AlbumSpec.swift */; };
+		F0560D061E392C1F00C32B8D /* GraphRequestData.json in Resources */ = {isa = PBXBuildFile; fileRef = F0560D051E392C1F00C32B8D /* GraphRequestData.json */; };
 		F0684F2F1E37AA77005BF9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */; };
 		F0684F341E37AA77005BF9DC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0684F321E37AA77005BF9DC /* Onboarding.storyboard */; };
 		F0684F361E37AA77005BF9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0684F351E37AA77005BF9DC /* Assets.xcassets */; };
@@ -77,6 +80,9 @@
 		F0560CF51E3917F300C32B8D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		F0560CF71E3917F700C32B8D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F0560CFF1E39186500C32B8D /* PhotoSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSpec.swift; sourceTree = "<group>"; };
+		F0560D011E391C3800C32B8D /* BaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSpec.swift; sourceTree = "<group>"; };
+		F0560D031E392A8200C32B8D /* AlbumSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumSpec.swift; sourceTree = "<group>"; };
+		F0560D051E392C1F00C32B8D /* GraphRequestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GraphRequestData.json; sourceTree = "<group>"; };
 		F0684F2B1E37AA77005BF9DC /* Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0684F2E1E37AA77005BF9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0684F331E37AA77005BF9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
@@ -170,7 +176,10 @@
 		F0684F421E37AA77005BF9DC /* dojo-photosTests */ = {
 			isa = PBXGroup;
 			children = (
+				F0560D011E391C3800C32B8D /* BaseSpec.swift */,
 				F0560CFF1E39186500C32B8D /* PhotoSpec.swift */,
+				F0560D031E392A8200C32B8D /* AlbumSpec.swift */,
+				F0560D051E392C1F00C32B8D /* GraphRequestData.json */,
 				F0684F451E37AA77005BF9DC /* Info.plist */,
 			);
 			path = "dojo-photosTests";
@@ -331,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0560D061E392C1F00C32B8D /* GraphRequestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +394,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0560D001E39186500C32B8D /* PhotoSpec.swift in Sources */,
+				F0560D041E392A8200C32B8D /* AlbumSpec.swift in Sources */,
+				F0560D021E391C3800C32B8D /* BaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
