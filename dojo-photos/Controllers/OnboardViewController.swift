@@ -30,7 +30,7 @@ class OnboardViewController: UIViewController {
         if let album = Album.first(), album.photos.count > 0 {
             onboardDidComplete()
         } else {
-            // The view will actually be visible at this point, introduce a slight delay
+            // So we get a proper animation as the view appears
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.showStatus(withMessage: "One moment while we load a few photos", loading: true)
             }
@@ -41,7 +41,12 @@ class OnboardViewController: UIViewController {
             }.then {
                 self.onboardDidComplete()
             }.catch { error in
-                print("Failed to fetch the next set of photos for the feed. \(error)")
+                // Don't want to clash with the above delay if we immediatley get a 404
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.showStatus(withMessage: "Failed to reach the server", loading: false)
+                }
+                
+                // Add a manual or automatic retry
             }
         }
     }
