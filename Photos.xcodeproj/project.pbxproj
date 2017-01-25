@@ -139,7 +139,7 @@
 				F0560CF21E3913A000C32B8D /* Cartfile.private */,
 				F0FD73C71E37B9280083A51C /* README.md */,
 				F0684F2D1E37AA77005BF9DC /* Photos */,
-				F0684F421E37AA77005BF9DC /* dojo-photosTests */,
+				F0684F421E37AA77005BF9DC /* Photos Unit Tests */,
 				F0684F2C1E37AA77005BF9DC /* Products */,
 				F0684F4E1E37B126005BF9DC /* Frameworks */,
 			);
@@ -173,7 +173,7 @@
 			path = "dojo-photos";
 			sourceTree = "<group>";
 		};
-		F0684F421E37AA77005BF9DC /* dojo-photosTests */ = {
+		F0684F421E37AA77005BF9DC /* Photos Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
 				F0560D011E391C3800C32B8D /* BaseSpec.swift */,
@@ -182,6 +182,7 @@
 				F0560D051E392C1F00C32B8D /* GraphRequestData.json */,
 				F0684F451E37AA77005BF9DC /* Info.plist */,
 			);
+			name = "Photos Unit Tests";
 			path = "dojo-photosTests";
 			sourceTree = "<group>";
 		};
